@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>This the temp1 html file</h1>
+        <h2><a href="{% url 'temp2' %}" target="blank">click here to travel to temp2</a></h2>
+
+        <h2><a href="{% url 'app2:specific_temp' %}">click here to travel to specific Temp html</a></h2>
+   
+       <!--
+           Simple if condition
+        {% if a > 1 %}
+            <h1>A value is {{a}}</h1>
+        {% endif %}
+   -->
+   <!--
+
+   <h1>If -else condition</h1>
+   {% if a > b %}
+        <h1>A is a Greater Value</h1>
+    {% else %}
+        <h1>B is a Greater Value</h1>
+    {% endif %}
+-->
+
+
+<h1>If -elif-else condition</h1>
+   {% if a > b %}
+        <h1>A is a Greater Value</h1>
+    {% elif b > a %}
+        <h1>B is a Greater Value</h1>
+    {% else %}
+        <h1> A and  B are equal </h1>
+    {% endif %}
+
+
+
+
+
+
+
+
+
+    </center>
+</body>
+</html>
